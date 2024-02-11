@@ -4,8 +4,9 @@
   --blue: #0466c8;
   --gray: #dee2e6;
   --lightgray: #eee;
-  --white: #fff;
+  --white: #f0f0f0;
   --black: #343a40;
+  --dark: #343a40;
 }
 
 * {
@@ -17,4 +18,281 @@
 
 body {
   font-family: "Quicksand", sans-serif;
+}
+
+/* ============================== */
+/* General Class */
+.container {
+  min-width: 100%;
+  margin: auto;
+  position: relative;
+  background-color: var(--white);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row-rev {
+  flex-direction: row-reverse;
+}
+
+.display-block {
+  display: block;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gap {
+  gap: 4rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mb-1 {
+  margin-bottom: 10px;
+}
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+}
+
+.shadow {
+  box-shadow: 0 4px 12px rgb(0, 0, 0, 0.2);
+}
+
+.text-gray {
+  color: #9fa3a6;
+}
+
+.text-title {
+  font-size: 30px;
+}
+
+.line-title {
+  border-left: 4px solid var(--blue);
+  padding-left: 1rem;
+}
+/* ============================== */
+/* Navigation */
+.nav {
+  padding: 1rem 6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.nav-menu li {
+  display: inline;
+  padding-left: 1rem;
+}
+
+.nav-menu li > a:hover {
+  color: var(--blue);
+}
+
+/* Hamburger menu */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  display: block;
+  background-color: var(--dark);
+  width: 35px;
+  height: 4px;
+  margin: 5px;
+  border-radius: 4px;
+  transition: 200ms;
+}
+
+.hamburgerMenuActive span:nth-child(1) {
+  transform: rotate(-45deg) translate(-4px, 9px);
+}
+
+.hamburgerMenuActive span:nth-child(3) {
+  transform: rotate(45deg) translate(-4px, -9px);
+}
+
+.hamburgerMenuActive span:nth-child(2) {
+  transform: scale(0);
+}
+
+.hamburgerMenuActive span {
+  background-color: var(--blue);
+}
+
+/* ============================== */
+/* Button */
+.btn {
+  width: 100%;
+  padding: 0.5rem 0;
+  border: 2px solid var(--blue);
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-nav {
+  width: 90px;
+  color: var(--blue);
+}
+
+.btn-nav:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.btn-solid {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.btn-solid:hover {
+  background-color: #0052a4;
+  color: var(--white);
+}
+
+/* ============================== */
+/* Hero */
+.hero {
+  padding: 8rem 6rem 3rem 6rem;
+  background-color: var(--white);
+}
+
+.hero-text > span {
+  display: block;
+}
+
+.hero-text > span:nth-child(1) {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.hero-text > span:nth-child(2) {
+  font-size: 2.25em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-text button {
+  width: 190px;
+  margin-top: 1rem;
+}
+
+.hero-img {
+  width: 550px;
+}
+
+/* About */
+.about {
+  padding: 3rem 6rem;
+  background-image: linear-gradient(var(--white), var(--lightgray));
+}
+
+.about-text {
+  width: 550px;
+}
+
+.about-text p {
+  padding-top: 0.5rem;
+  padding-left: calc(1rem + 4px);
+  line-height: 1.5rem;
+  opacity: 0.8;
+}
+
+.about-items {
+  margin-bottom: 4rem;
+}
+
+.about-img {
+  width: 300px;
+}
+
+/* ============================== */
+/* Bootcamp */
+.bootcamp {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  /* margin: 5px 15px; */
+  gap: 20px;
+  position: relative;
+  padding: 1rem 6rem;
+}
+
+/* ============================== */
+/* Parallax */
+.intro {
+  /* background-color: aqua; */
+  background-image: url("../image/banner/bg-parallax.jpeg");
+  /* width: 100%; */
+  /* filter: grayscale(.2); */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3rem 6rem;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  grid-column: span 2;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.head-card img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
 }

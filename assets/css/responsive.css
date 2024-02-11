@@ -1,0 +1,83 @@
+/* ===================================== */
+/* responsive */
+@media screen and (max-width: 1200px) {
+  .nav,
+  .hero,
+  .about,
+  .intro,
+  .bootcamp {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* navigation */
+  .nav-menu {
+    position: absolute;
+    top: 3.5rem;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.2);
+    width: 0px;
+    height: 350px;
+    padding: 1rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 200ms;
+  }
+
+  .nav-menu li {
+    display: block;
+    padding: 1rem;
+    text-align: right;
+  }
+
+  .navMenuActive {
+    width: 250px;
+    padding: 1rem;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* hero */
+  .hero .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card {
+    grid-column: span 4;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav,
+  .hero,
+  .about,
+  .intro,
+  .bootcamp {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-text span:nth-child(1) {
+    font-size: 1em;
+  }
+
+  .about-text {
+    text-align: start;
+  }
+
+  .about .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card {
+    grid-column: span 8;
+  }
+}

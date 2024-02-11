@@ -6,10 +6,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EndCode</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
+  <header>
+    <nav id="nav" class="nav">
+      <div class="container flex justify-between items-center">
+        <div class="nav-title">
+          <a href="#"><img src="assets/image/LogoEndCode-noBg.png" width="140px" height="auto" alt="Logo-EndCode"></a>
+        </div>
+        <div class="nav-menu" id="navMenu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#bootcamp">Kelas</a></li>
+            <li><button class="btn btn-nav">Daftar</button></li>
+            <li><button class="btn btn-nav btn-solid">Masuk</button></li>
+          </ul>
+        </div>
+        <div class="hamburger-menu" id="hamburgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
 
+    <section class="hero">
+      <div class="container flex justify-around items-center gap">
+        <div class="hero-text text-shadow">
+          <span>Ayo Belajar Programming & Jadi</span>
+          <span>Programmer
+            <span class="text-gray">Profesional</span></span>
+          <span>Mulai Belajar Sekarang!</span>
+          <button class="btn btn-solid shadow">Belajar Sekarang</button>
+        </div>
+        <div class="hero-img">
+          <img class="w-full" src="assets/image/banner/hero.svg" alt="banner" />
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="about">
+      <div class="container">
+        <article class="about-items flex flex-row-rev justify-center gap items-center">
+          <div class="about-text text-shadow">
+            <h2 class="line-title">Apa Itu EndCode ?</h2>
+            <p>
+              EndCode adalah sebuah tempat belajar
+              programming dan teknologi secara gratis, dan kami juga menyediakan jasa pembuatan website, dan juga
+              pemeliharaan sistem
+            </p>
+          </div>
+          <div class="about-img">
+            <img class="w-full" src="assets/image/banner/people.svg" alt="AboutImages" />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="container text-center intro">
+        <h2 class="text-title text-shadow mb-1">Bootcamp & Class</h2>
+
+        <div class="bootcamp">
+          <div class="card">
+            <div class="head-card">
+              <img src="assets/image/bootcamp/eduwork.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <div class="head-card">
+              <img src="assets/image/bootcamp/dqlab.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <div class="head-card">
+              <img src="assets/image/bootcamp/dts.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <div class="head-card">
+              <img src="assets/image/bootcamp/idcamp.png" alt="">
+            </div>
+          </div>
+        </div>
+        <p><i>*bootcamp dan kelas pemrograman yang pernah di ikuti!</i> </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/index.js"></script>
 </body>
 
 </html>
