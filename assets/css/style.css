@@ -26,7 +26,6 @@ body {
   min-width: 100%;
   margin: auto;
   position: relative;
-  background-color: var(--white);
 }
 
 .flex {
@@ -200,6 +199,12 @@ a {
   color: var(--white);
 }
 
+.btn-port {
+  width: 90px;
+  height: max-content;
+  margin: 1rem;
+}
+
 /* ============================== */
 /* Hero */
 .hero {
@@ -295,4 +300,88 @@ a {
   width: 50%;
   height: auto;
   object-fit: cover;
+}
+
+/* ============================== */
+/* Tabs */
+.tabsContainer {
+  padding: 3rem 6rem;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  margin-bottom: 1rem;
+  background-color: var(--lightgray);
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.tabs li {
+  cursor: pointer;
+  position: relative;
+}
+
+.tabs li::after {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  left: -2%;
+  width: 0%;
+  height: 5px;
+  background: var(--dark);
+  border-radius: 30px;
+  transition: width 0.4s ease;
+}
+
+.tabs li.active::after {
+  width: 105%;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.content.active {
+  display: flex;
+  position: relative;
+  animation: fade 1s ease;
+}
+
+.content img {
+  width: 100%;
+  height: 20rem;
+}
+
+.content h3 {
+  width: 70%;
+  padding: 1rem;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.portContent {
+  position: relative;
+}
+
+.portCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  width: 100%;
+  background-color: var(--lightgray);
+  border-radius: 15px;
+}
+
+.portList {
+  display: contents;
 }

@@ -5,7 +5,8 @@
   .hero,
   .about,
   .intro,
-  .bootcamp {
+  .bootcamp,
+  .tabsContainer {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -24,7 +25,7 @@
     padding: 1rem 0;
     border-radius: 8px;
     overflow: hidden;
-    transition: 200ms;
+    transition: 3ms;
   }
 
   .nav-menu li {
@@ -58,7 +59,8 @@
   .hero,
   .about,
   .intro,
-  .bootcamp {
+  .bootcamp,
+  .tabsContainer {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -79,5 +81,13 @@
 
   .card {
     grid-column: span 8;
+  }
+
+  .tabsContainer {
+    width: 100%;
+  }
+
+  .popup {
+    width: 70%;
   }
 }

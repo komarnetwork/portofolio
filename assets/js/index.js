@@ -1,6 +1,9 @@
 const nav = document.getElementById("nav");
 const navMenu = document.getElementById("navMenu");
 const hamburgerMenu = document.getElementById("hamburgerMenu");
+const tabs = document.querySelectorAll(".tabs li");
+const contents = document.querySelectorAll(".content");
+const front = document.querySelectorAll(".content .front");
 
 // box shadow navigation aktiv pada saat window di scroll
 window.onscroll = function () {
@@ -20,3 +23,21 @@ hamburgerMenu.addEventListener("click", function () {
   hamburgerMenu.classList.toggle("hamburgerMenuActive");
   navMenu.classList.toggle("navMenuActive");
 });
+
+// tabs
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    // hapus class active dari sebelumnya di klik
+    tabs.forEach((tab) => tab.classList.remove("active"));
+
+    tab.classList.add("active");
+
+    // hide dari content sebelumnya
+    contents.forEach((c) => c.classList.remove("active"));
+
+    // menampilkan content dari tab yang terseleksi
+    contents[index].classList.add("active");
+  });
+});
+
+tabs[0].click();
