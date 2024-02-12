@@ -3,6 +3,9 @@ const navMenu = document.getElementById("navMenu");
 const hamburgerMenu = document.getElementById("hamburgerMenu");
 const tabs = document.querySelectorAll(".tabs li");
 const contents = document.querySelectorAll(".content");
+const modalViews = document.querySelectorAll(".modal");
+const triggerBtn = document.querySelectorAll(".trigger");
+const closeButton = document.querySelectorAll(".close-button");
 
 // box shadow navigation aktiv pada saat window di scroll
 window.onscroll = function () {
@@ -40,3 +43,22 @@ tabs.forEach((tab, index) => {
 });
 
 tabs[0].click();
+
+// portofolio modal/popup
+var modal = function (modalClick) {
+  modalViews[modalClick].classList.add("active");
+};
+
+triggerBtn.forEach((triggerBtn, i) => {
+  triggerBtn.addEventListener("click", () => {
+    modal(i);
+  });
+});
+
+closeButton.forEach((closeBtn) => {
+  closeBtn.addEventListener("click", () => {
+    modalViews.forEach((modalView) => {
+      modalView.classList.remove("active");
+    });
+  });
+});
