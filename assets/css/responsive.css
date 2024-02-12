@@ -90,4 +90,11 @@
   .popup {
     width: 70%;
   }
+
+  .tabsContainer h2 {
+    font-size: 18px;
+  }
+  .tabsContainer h3 {
+    font-size: 16px;
+  }
 }

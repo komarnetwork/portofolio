@@ -3,7 +3,6 @@ const navMenu = document.getElementById("navMenu");
 const hamburgerMenu = document.getElementById("hamburgerMenu");
 const tabs = document.querySelectorAll(".tabs li");
 const contents = document.querySelectorAll(".content");
-const front = document.querySelectorAll(".content .front");
 
 // box shadow navigation aktiv pada saat window di scroll
 window.onscroll = function () {
