@@ -52,6 +52,7 @@ var modal = function (modalClick) {
 triggerBtn.forEach((triggerBtn, i) => {
   triggerBtn.addEventListener("click", () => {
     modal(i);
+    // alert("hello");
   });
 });
 

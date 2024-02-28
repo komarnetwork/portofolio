@@ -149,6 +149,14 @@ a {
   background-image: linear-gradient(var(--white));
 }
 
+.icon {
+  width: 30px;
+}
+.icon-cv {
+  margin-left: 10px;
+  width: 15px;
+}
+
 /* ============================== */
 /* Navigation */
 .nav {
@@ -309,15 +317,10 @@ a {
 /* ============================== */
 /* Parallax */
 .intro {
-  /* background-color: aqua; */
   background-image: url("../image/banner/bg-parallax.jpeg");
-  /* width: 100%; */
-  /* filter: grayscale(.2); */
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 2rem 13rem;
-  width: 100%;
 }
 
 .card {
@@ -405,16 +408,14 @@ a {
 }
 
 .portCard {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
   width: 100%;
   background-color: var(--lightgray);
   border-radius: 15px;
 }
 
 .portList {
-  display: contents;
+  display: flex;
+  justify-content: center;
 }
 
 /* ============================== */
@@ -497,14 +498,8 @@ a {
   background-color: var(--white);
 }
 
-/* Portofolio Project */
-.icon {
-  width: 30px;
-}
-.icon-cv {
-  margin-left: 10px;
-  width: 15px;
-}
+/* ============================== */
+/* Footer */
 
 footer a img {
   margin-right: 20px;
