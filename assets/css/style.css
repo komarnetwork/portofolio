@@ -68,6 +68,10 @@ body {
   gap: 4rem;
 }
 
+.gap-2 {
+  gap: 15rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -86,8 +90,24 @@ body {
   margin-bottom: 20px;
 }
 
+.pd-1 {
+  padding: 10px;
+}
+
+.pd-2 {
+  padding: 20px;
+}
+
+.pb-1 {
+  padding-bottom: 10px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 a {
@@ -115,10 +135,24 @@ a {
   border-left: 4px solid var(--blue);
   padding-left: 1rem;
 }
+
+.box-shadow {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-content {
+  padding: 2rem 13rem;
+  background-image: linear-gradient(var(--white), var(--lightgray));
+}
+
+.bg-white {
+  background-image: linear-gradient(var(--white));
+}
+
 /* ============================== */
 /* Navigation */
 .nav {
-  padding: 1rem 6rem;
+  padding: 1rem 13rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -208,7 +242,7 @@ a {
 /* ============================== */
 /* Hero */
 .hero {
-  padding: 8rem 6rem 3rem 6rem;
+  padding: 8rem 13rem 3rem 13rem;
   background-color: var(--white);
 }
 
@@ -233,7 +267,12 @@ a {
 }
 
 .hero-img {
-  width: 550px;
+  width: 330px;
+}
+
+.hero-img img {
+  box-shadow: 0 4px 12px rgb(0, 0, 0, 0.2);
+  border-radius: 15px;
 }
 
 /* About */
@@ -253,10 +292,6 @@ a {
   opacity: 0.8;
 }
 
-.about-items {
-  margin-bottom: 4rem;
-}
-
 .about-img {
   width: 300px;
 }
@@ -269,7 +304,6 @@ a {
   /* margin: 5px 15px; */
   gap: 20px;
   position: relative;
-  padding: 1rem 6rem;
 }
 
 /* ============================== */
@@ -282,7 +316,7 @@ a {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 3rem 6rem;
+  padding: 2rem 13rem;
   width: 100%;
 }
 
@@ -293,20 +327,21 @@ a {
   padding: 5px;
   border-radius: 15px;
   position: relative;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-.head-card img {
+.card-body img {
   width: 50%;
   height: auto;
   object-fit: cover;
+  text-align: center;
+}
+
+.card .card-body .border-circle {
+  border-radius: 20px;
 }
 
 /* ============================== */
 /* Tabs */
-.tabsContainer {
-  padding: 3rem 6rem;
-}
 
 .tabs {
   list-style: none;
@@ -367,10 +402,6 @@ a {
   to {
     opacity: 1;
   }
-}
-
-.portContent {
-  position: relative;
 }
 
 .portCard {
@@ -453,4 +484,33 @@ a {
   visibility: visible;
   transform: scale(1);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 9999;
+}
+
+.w50 {
+  max-width: 50%;
+  display: inline-flex;
+}
+
+.certificate {
+  padding: 3rem 6rem;
+  background-color: var(--white);
+}
+
+/* Portofolio Project */
+.icon {
+  width: 30px;
+}
+.icon-cv {
+  margin-left: 10px;
+  width: 15px;
+}
+
+footer a img {
+  margin-right: 20px;
+}
+
+.footer-copyright {
+  background-color: var(--gray);
+  padding: 1rem;
 }

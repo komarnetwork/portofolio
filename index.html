@@ -7,6 +7,7 @@
   <title>EndCode</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="shortcut icon" href="assets/image/favicon.png">
 </head>
 
 <body>
@@ -14,13 +15,13 @@
     <nav id="nav" class="nav">
       <div class="container flex justify-between items-center">
         <div class="nav-title">
-          <a href="#"><img src="assets/image/LogoEndCode-noBg.png" width="140px" height="auto" alt="Logo-EndCode"></a>
+          <a href="#"><img src="assets/image/Logo.png" width="140px" height="auto" alt="Logo-EndCode"></a>
         </div>
         <div class="nav-menu" id="navMenu">
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#bootcamp">Kelas</a></li>
+            <li><a href="#kelas">Kelas</a></li>
+            <li><a href="#project">Project</a></li>
             <li><button class="btn btn-nav">Daftar</button></li>
             <li><button class="btn btn-nav btn-solid">Masuk</button></li>
           </ul>
@@ -34,35 +35,37 @@
     </nav>
 
     <section class="hero">
-      <div class="container flex justify-around items-center gap">
+      <div class="container flex justify-between items-center gap">
         <div class="hero-text text-shadow">
           <span>Ayo Belajar Programming & Jadi</span>
-          <span>Programmer
+          <span>Fullstack Web Developer <br>
             <span class="text-gray">Profesional</span></span>
-          <span>Mulai Belajar Sekarang!</span>
-          <button class="btn btn-solid shadow">Belajar Sekarang</button>
+          <a href="assets/files/CV Komarudin-2024.pdf" width="500" height="375"> <button
+              class="btn btn-solid shadow">Download CV <img class="icon-cv" src="assets/image/icon/document.svg"
+                alt="Download CV"> </button></a>
         </div>
         <div class="hero-img">
-          <img class="w-full" src="assets/image/banner/hero.svg" alt="banner" />
+          <img class="w-full" src="assets/image/profile.jpg" alt="banner" />
         </div>
       </div>
     </section>
   </header>
 
   <main>
-    <section id="about" class="about">
+    <section id="about" class="section-content">
       <div class="container">
-        <article class="about-items flex flex-row-rev justify-center gap items-center">
+        <article class="flex flex-row-rev justify-between items-center gap">
           <div class="about-text text-shadow">
             <h2 class="line-title">Apa Itu EndCode ?</h2>
             <p>
               EndCode adalah sebuah tempat belajar
-              programming dan teknologi secara gratis, dan kami juga menyediakan jasa pembuatan website, dan juga
+              programming dan teknologi secara gratis, dan kami juga menyediakan jasa pembuatan website, desain grafis,
+              dan juga
               pemeliharaan sistem
             </p>
           </div>
           <div class="about-img">
-            <img class="w-full" src="assets/image/banner/people.svg" alt="AboutImages" />
+            <img class="w-full" src="assets/image/banner/apa-itu.png" alt="AboutImages" />
           </div>
         </article>
       </div>
@@ -73,24 +76,44 @@
         <h2 class="text-title text-shadow mb-1">Bootcamp & Class</h2>
 
         <div class="bootcamp">
-          <div class="card">
-            <div class="head-card">
-              <img src="assets/image/bootcamp/eduwork.png" alt="">
+          <div class="card box-shadow">
+            <div class="card-body">
+              <img src="assets/image/bootcamp/dicoding.png" alt="dicoding">
             </div>
           </div>
-          <div class="card">
-            <div class="head-card">
-              <img src="assets/image/bootcamp/dqlab.png" alt="">
+          <div class="card box-shadow">
+            <div class="card-body">
+              <img src="assets/image/bootcamp/codepolitan.png" alt="codepolitan">
             </div>
           </div>
-          <div class="card">
-            <div class="head-card">
-              <img src="assets/image/bootcamp/dts.png" alt="">
+          <div class="card box-shadow">
+            <div class="card-body">
+              <img src="assets/image/bootcamp/sekolahkoding.png" alt="sekolahkoding">
             </div>
           </div>
-          <div class="card">
-            <div class="head-card">
-              <img src="assets/image/bootcamp/idcamp.png" alt="">
+          <div class="card box-shadow">
+            <div class="card-body">
+              <img src="assets/image/bootcamp/wpu.png" alt="wpu">
+            </div>
+          </div>
+          <div class="card box-shadow">
+            <div class="card-body">
+              <img src="assets/image/bootcamp/sanbercode.png" alt="sanbercode">
+            </div>
+          </div>
+          <div class="card box-shadow">
+            <div class="card-body">
+              <img src="assets/image/bootcamp/udemy.png" alt="udemy">
+            </div>
+          </div>
+          <div class="card box-shadow">
+            <div class="card-body">
+              <img src="assets/image/bootcamp/g2.png" alt="g2">
+            </div>
+          </div>
+          <div class="card box-shadow">
+            <div class="card-body">
+              <img src="assets/image/bootcamp/idn.png" alt="IDN">
             </div>
           </div>
         </div>
@@ -98,7 +121,7 @@
       </div>
     </section>
 
-    <section class="tabsContainer">
+    <section class="section-content bg-white">
       <ul class="tabs text-shadow justify-around">
         <li>
           <h2>Front End</h2>
@@ -111,7 +134,7 @@
         </li>
       </ul>
 
-      <div class="content portContent">
+      <div class="content">
         <div class="portCard">
           <div class="portList">
             <h3>Belajar Dasar Pemrograman JavaScript</h3>
@@ -310,7 +333,7 @@
         </div>
       </div>
 
-      <div class="content portContent">
+      <div class="content">
         <div class="portCard">
           <div class="portList">
             <h3>Belajar Membuat Aplikasi Back-End untuk Pemula</h3>
@@ -455,7 +478,7 @@
         </div>
       </div>
 
-      <div class="content portContent">
+      <div class="content">
         <div class="portCard">
           <div class="portList">
             <h3>Mikrotik MTCTCE</h3>
@@ -667,6 +690,168 @@
       </div>
 
     </section>
+
+    <section class="section-content">
+      <div class="container text-center">
+        <h2 class="text-title text-shadow mb-1">Training Certificate
+        </h2>
+        <div class="bootcamp">
+          <div class="card">
+
+            <div class="card-body">
+              <zoomable-image>
+                <img class="img-card" src="assets/image/cert/sertifikat-javascript-dicoding.jpeg" alt="javascript" />
+              </zoomable-image>
+            </div>
+
+          </div>
+          <div class="card">
+
+            <div class="card-body">
+              <zoomable-image>
+                <img class="img-card" src="assets/image/cert/sertifikat-back-end-dicoding.jpg" alt="back-end" />
+              </zoomable-image>
+            </div>
+
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <zoomable-image class="w50">
+                <img class="img-card" src="assets/image/cert/sertifikat-laravel.png" alt="laravel" />
+              </zoomable-image>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <zoomable-image>
+                <img class="img-card" src="assets/image/cert/mtctce.jpg" alt="mtctce" />
+              </zoomable-image>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <zoomable-image>
+                <img class="img-card" src="assets/image/cert/mtcre.jpg" alt="mtcna" />
+              </zoomable-image>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <zoomable-image>
+                <img class="img-card" src="assets/image/cert/mtcna.jpg" alt="mtcna" />
+              </zoomable-image>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <zoomable-image>
+                <img class="img-card" src="assets/image/cert/git_repository.jpg" alt="git" />
+              </zoomable-image>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <zoomable-image>
+                <img class="img-card" src="assets/image/cert/intro.jpg" alt="git" />
+              </zoomable-image>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-content bg-white">
+      <div class="container">
+        <h2 class="text-title text-shadow mb-1 text-center">Portfolio Project </h2>
+        <div class="bootcamp">
+          <div class="card box-shadow">
+            <div class="card-body">
+              <zoomable-image class="mb-1">
+                <img class="img-card" src="assets/image/portofolio/portofolio-target.jpg" alt="portofolio-target" />
+              </zoomable-image>
+
+              <h3 class="pd-2 pb-1 text-shadow">Company Profile</h3>
+              <p class="mb-1 pd-2 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quia
+                accusantium,
+                deserunt
+                consequuntur, dolorem repellat ut doloribus quis qui consequatur nemo distinctio cumque ea temporibus
+                eius, iusto quam illum esse!</p>
+              <hr class="mb-1">
+              <a href="#"><button class="btn btn-solid shadow border-circle">Lihat</button></a>
+            </div>
+          </div>
+          <div class="card box-shadow">
+            <div class="card-body">
+              <zoomable-image class="mb-1">
+                <img class="img-card" src="assets/image/portofolio/bookshelf-api.jpg" alt="bookshelf-api" />
+              </zoomable-image>
+
+              <h3 class="pd-2 pb-1 text-shadow">Bookshelf API</h3>
+              <p class="mb-1 pd-2 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quia
+                accusantium,
+                deserunt
+                consequuntur, dolorem repellat ut doloribus quis qui consequatur nemo distinctio cumque ea temporibus
+                eius, iusto quam illum esse!</p>
+              <hr class="mb-1">
+              <a href="https://github.com/komarnetwork/submission-bookshelf-api"><button
+                  class="btn btn-solid shadow border-circle">Lihat</button></a>
+            </div>
+          </div>
+          <div class="card box-shadow">
+            <div class="card-body">
+              <zoomable-image class="mb-1">
+                <img class="img-card" src="assets/image/portofolio/notes-apps.jpg" alt="notes-apps" />
+              </zoomable-image>
+
+              <h3 class="pd-2 pb-1 text-shadow">Notes Apps</h3>
+              <p class="mb-1 pd-2 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quia
+                accusantium,
+                deserunt
+                consequuntur, dolorem repellat ut doloribus quis qui consequatur nemo distinctio cumque ea temporibus
+                eius, iusto quam illum esse!</p>
+              <hr class="mb-1">
+              <a href="https://github.com/komarnetwork/notes-app-back-end">
+                <button class="btn btn-solid shadow border-circle">Lihat</button></a>
+            </div>
+          </div>
+          <div class="card box-shadow">
+            <div class="card-body">
+              <zoomable-image class="mb-1">
+                <img class="img-card" src="assets/image/portofolio/toko-online.png" alt="toko-online" />
+              </zoomable-image>
+
+              <h3 class="pd-2 pb-1 text-shadow">Toko Online</h3>
+              <p class="mb-1 pd-2 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quia
+                accusantium,
+                deserunt
+                consequuntur, dolorem repellat ut doloribus quis qui consequatur nemo distinctio cumque ea temporibus
+                eius, iusto quam illum esse!</p>
+              <hr class="mb-1">
+              <a href="https://github.com/komarnetwork/tokobungaonline"><button
+                  class="btn btn-solid shadow border-circle">Lihat</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section-content">
+      <div class="container">
+        <h2>Sosial Media</h2>
+        <p class="mb-2">Find us in social media</p>
+        <div>
+          <a href="mailto:komar.network@gmail.com"><img class="icon" src="assets/image/icon/email.svg" alt="email"></a>
+          <a href="https://github.com/komarnetwork"><img class="icon" src="assets/image/icon/github.svg"
+              alt="github"></a>
+          <a href="https://www.linkedin.com/in/komar-udin/"> <img class="icon" src="assets/image/icon/linkedin.svg"
+              alt="linkedin"></a>
+        </div>
+      </div>
+    </footer>
+    <div>
+      <p class="footer-copyright text-center">Copyright &copy 2024 Created by EndCode</p>
+    </div>
   </main>
 
   <script src="assets/js/index.js"></script>

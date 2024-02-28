@@ -3,10 +3,10 @@
 @media screen and (max-width: 1200px) {
   .nav,
   .hero,
-  .about,
+  .section-content,
   .intro,
   .bootcamp,
-  .tabsContainer {
+  .certificate {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -57,10 +57,10 @@
 @media screen and (max-width: 600px) {
   .nav,
   .hero,
-  .about,
+  .section-content,
   .intro,
   .bootcamp,
-  .tabsContainer {
+  .certificate {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -80,21 +80,14 @@
   }
 
   .card {
-    grid-column: span 8;
+    grid-column: span 4;
   }
 
-  .tabsContainer {
-    width: 100%;
+  .card-body img {
+    width: 50%;
   }
 
   .popup {
     width: 70%;
-  }
-
-  .tabsContainer h2 {
-    font-size: 18px;
-  }
-  .tabsContainer h3 {
-    font-size: 16px;
   }
 }
