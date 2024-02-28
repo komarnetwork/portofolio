@@ -384,7 +384,7 @@ a {
 }
 
 .content.active {
-  display: flex;
+  display: block;
   position: relative;
   animation: fade 1s ease;
 }
