@@ -124,7 +124,11 @@ a {
 }
 
 .text-gray {
-  color: #9fa3a6;
+  color: var(--gray);
+}
+
+.text-white {
+  color: var(--white);
 }
 
 .text-title {
@@ -155,6 +159,10 @@ a {
 .icon-cv {
   margin-left: 10px;
   width: 15px;
+}
+
+.col-2 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* ============================== */
@@ -317,7 +325,7 @@ a {
 /* ============================== */
 /* Parallax */
 .intro {
-  background-image: url("../image/banner/bg-parallax.jpeg");
+  background-image: url("../image/banner/bg-parallax.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

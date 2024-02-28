@@ -86,4 +86,8 @@
   .popup {
     width: 70%;
   }
+
+  .portofolio {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
