@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 :root {
   --blue: #0466c8;
@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* ============================== */
@@ -325,7 +325,6 @@ a {
 /* ============================== */
 /* Parallax */
 .intro {
-  background-image: url("../image/banner/bg-parallax.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -338,8 +337,12 @@ a {
   padding: 5px;
   border-radius: 15px;
   position: relative;
+  transition: transform 0.2s;
 }
 
+.card:hover {
+  transform: scale(1.1);
+}
 .card-body img {
   width: 50%;
   height: auto;
@@ -369,7 +372,7 @@ a {
 }
 
 .tabs li::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -40%;
   left: -2%;

@@ -19,7 +19,7 @@
     background-color: var(--white);
     box-shadow: 0 4px 12px rgb(0, 0, 0, 0.2);
     width: 0px;
-    height: 350px;
+    height: 260px;
     padding: 1rem 0;
     border-radius: 8px;
     overflow: hidden;
@@ -63,10 +63,6 @@
 
   .hero-text span:nth-child(1) {
     font-size: 1em;
-  }
-
-  .about-text {
-    text-align: start;
   }
 
   .about .flex {
