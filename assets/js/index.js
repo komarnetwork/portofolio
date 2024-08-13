@@ -210,3 +210,28 @@ createOverlay();
 
 customElements.define('zoomable-image', ZoomableImage);
 customElements.define('zoomable-image-overlay', ZoomableImageOverlay);
+
+const imgClass = [
+  { name: 'dicoding', url: 'assets/image/bootcamp/dicoding.png' },
+  { name: 'codepolitan', url: 'assets/image/bootcamp/codepolitan.png' },
+  { name: 'sekolah koding', url: 'assets/image/bootcamp/sekolahkoding.png' },
+  { name: 'wpu', url: 'assets/image/bootcamp/wpu.png' },
+  { name: 'sanbercode', url: 'assets/image/bootcamp/sanbercode.png' },
+  { name: 'udemy', url: 'assets/image/bootcamp/udemy.png' },
+  { name: 'g2', url: 'assets/image/bootcamp/g2.png' },
+  { name: 'idn', url: 'assets/image/bootcamp/idn.png' },
+];
+const classList = document.getElementById('classList');
+
+const titleName = imgClass.map((el) => el.name);
+const url = imgClass.map((el) => el.url);
+
+for (let i = 0; i < imgClass.length; i++) {
+  classList.innerHTML =
+    classList.innerHTML +
+    `<div class="card box-shadow">
+            <div class="card-body">
+              <img src="${url[i]}" alt="${titleName[i]}" title="${titleName[i]}" />
+            </div>
+          </div>`;
+}
